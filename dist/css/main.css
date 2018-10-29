@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .header_bar {
   position: fixed;
-  height: 80px;
+  height: 70px;
   left: 0;
   top: 0;
   right: 0;
@@ -108,3 +108,7 @@
     -webkit-transform: scale(0.95);
         -ms-transform: scale(0.95);
             transform: scale(0.95); }
+
+.main-buttom {
+  -webkit-border-radius: 50px;
+          border-radius: 50px; }

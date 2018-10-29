@@ -71,6 +71,9 @@ img:not([width]) {
 .f-green {
   color: #4bbbad; }
 
+.f-blue {
+  color: #6C8FEA; }
+
 .bg-white {
   background-color: white; }
 
@@ -84,7 +87,7 @@ img:not([width]) {
   background-color: #d9f1f4; }
 
 .bg-blue {
-  background-color: #4ab7d5; }
+  background-color: #6C8FEA; }
 
 .bg-green {
   background-color: #4bbbad; }
@@ -128,6 +131,12 @@ img:not([width]) {
 .mh-100vh {
   min-height: 100vh; }
 
+.mt-70px {
+  margin-top: 70px; }
+
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); }
+
 .d-relative {
   position: relative; }
 
@@ -168,7 +177,7 @@ img:not([width]) {
   overflow: hidden; }
 
 a, a:active, a:hover, a:visited, a:focus {
-  color: #4bbbad;
+  color: #6C8FEA;
   text-decoration: none; }
 
 @media (max-width: 767.98px) {

@@ -11,21 +11,30 @@ block head_end
     link(rel="stylesheet", href="./css/index.css")
 
 block body_content
-    main.wrapper
-        section.h-90vh.o-h
-            .advertisement
-                .py-2
-                    .loader
-                .py-2.f-white.f-2xl
-                    | 隨心所欲，輕鬆架站
-                .py-2.f-white.f-md
-                    | 隨心所欲，客製化一個美觀亮眼的網站
+    main.wrapper.mt-70px
+        section.o-h
+            .container
+                .h-100px
+                .row
+                    .col-12.col-md-4.offset-md-4.col-lg-4.offset-lg-6
+                        .d-flex.flex-column.justify-content-center.align-items-center
+                            .f-lg.text-light.text-shadow
+                                | test
+                            .f-md.text-light.text-shadow
+                                | subtitle
+                            .mt-3.mb-3.p-3.bg-white.f-blue.rounded.shadow
+                                | contents contents contents contents contents contents contents
+                .h-100px
             #FSA.full_screen_ad
         section.bg-white
-            .container.d-flex.flex-column.align-items-center.justfy-content-center
+            .container.d-flex.flex-column.align-items-center.justify-content-center
                 .h-100px
-                .py-2.f-green.f-lg.font-weight-bold.border_bottom
-                    | 隨心所欲客製化一個美觀亮眼的網站
+                .f-md.f-blue
+                    | subtitle
+                .f-lg.f-blue
+                    | test
+                .f-blue.rounded
+                    | contents contents contents contents contents contents contents
                 .row.pt-4
                     .col-12.col-md-6
                         .project-box.m-4.hover_style
