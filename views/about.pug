@@ -1,0 +1,66 @@
+extends ./_global/page
+
+block head_end
+    // parallax.js
+    script(src="./libraries/parallax.min.js")
+
+    // fancybox
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
+
+    link(rel="stylesheet", href="./css/index.css")
+
+block body_content
+    main.wrapper.mt-70px
+        section.o-h
+            .container.my-2
+                .row
+                    .col-12.col-md-6
+                        .d-flex.flex-column.justify-content-center.h-100
+                            .f-sm.text-light.text-shadow
+                                | 家庭理財/週轉得好靠山
+                            .f-xl.text-light.text-shadow.font-weight-bold.text-nowrap
+                                //- img(src="./images/logo.png", width="140", height="auto")
+                                | #{companyTitle}有限公司
+                    .col-12.col-md-6
+                        .d-flex.flex-column.justify-content-center.align-items-center
+                            .mt-3.mb-3
+                                img(src="./images/index-text-bubble.png")
+            .parallax(style="background-image: url(./images/about-image-blur.png)")
+        section
+            .h-50px
+            .container
+                .row
+                    .col-12.col-md-5
+                        .d-flex.flex-column.align-items-center.justify-content-center.h-100
+                            .mb-2.d-relative
+                                img(src="./images/index-text-subtitle.png", width="300px", height="auto")
+                            .f-xl.f-blue.font-weight-bold
+                                | 團隊介紹文字
+                            .f-sm.f-blue.text-center
+                                | 團隊介紹內容
+                                br
+                                | 團隊介紹內容團隊介紹內容團隊介紹內容
+                                br
+                                | 團隊介紹內容團隊介紹內容
+                            //- .main-button.f-sm.mt-4
+                            //-     | 團隊介紹內容
+                    .col-12.col-md-7
+                            img(src="./images/about-image-team.png")
+            .h-50px
+            .parallax(style="background-image: url(./images/about-bg-blue.jpg)")
+        section.o-h
+            .container
+                .h-50px
+                .d-flex.flex-column.justify-content-center.align-items-center
+                    .f-xl.text-light.text-shadow.text-nowrap.font-weight-bold
+                        | 我們的服務據點
+                    .f-xs.text-light.text-center
+                        | 我們的地址: 高雄市苓雅區中山二路368號2樓之2
+                        br
+                        | 代表號：0979-770-555
+                .h-50px
+            .parallax.bg-blue-gradient
+        section.h-80vh
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9741361691003!2d120.30127031543047!3d22.617440985159615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0482266aaf51%3A0xc84cf3bb9d6b4fae!2s%E6%A8%93%E4%B9%8B2%2C+No.+368%2C+Zhongshan+2nd+Road%2C+Lingya+District%2C+Kaohsiung+City%2C+802!5e0!3m2!1sen!2stw!4v1541173965245', frameborder='0', style='border:0; position: absolute; left: 0; top: 0; width: 100%; height: 100%;', allowfullscreen='')
+            .parallax

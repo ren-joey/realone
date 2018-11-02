@@ -1,0 +1,140 @@
+extends ./_global/page
+
+block head_end
+    // parallax.js
+    script(src="./libraries/parallax.min.js")
+
+    // fancybox
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
+
+    link(rel="stylesheet", href="./css/index.css")
+
+    style(type='text/css').
+        body{
+            background: white !important;
+            }
+
+block body_content
+    main.wrapper.mt-70px
+        section.o-h
+            .h-50px
+            .container
+                .row
+                    .col-12.col-md-6
+                        .d-flex.flex-column.justify-content-center.h-100
+                            .f-sm.text-light.text-shadow
+                                | 家庭理財/週轉得好靠山
+                            .f-xl.text-light.text-shadow.font-weight-bold.text-nowrap
+                                //- img(src="./images/logo.png", width="140", height="auto")
+                                | #{companyTitle}
+                                span.f-light-green
+                                    | 信用借貸
+            .h-50px
+            .parallax(style="background-image: url(./images/loan-image-blur.png)")
+        section
+            .h-50px
+            .container
+                //- 01 汽機車貸款
+                .row
+                    .col-12.col-md-1.hidden-sm-down
+                        .bg-green-gradient.p-2.h-100(style="width: 30px; float: right;")
+                            .rounded-circle.f-2xs.font-weight-bold.f-green.bg-white.text-center 1
+                    .col-12.col-md-6
+                        .d-flex
+                            .mr-3
+                                img(src="./images/loan-icon-car.png", width="auto", height="60")
+                            .flex-1
+                                .f-sm.f-green 副標題
+                                .f-lg.f-green.font-weight-bold 汽機車貸
+                        .mt-3.f-xs.f-green
+                            | 汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字
+                    .col-12.col-md-5
+                        img(src="./images/loan-image-car.png", width="100%", height="auto")
+                .h-100px
+                //- 02 信用貸款
+                .row
+                    .col-12.col-md-5.order-3.order-md-1
+                        img(src="./images/loan-image-credit.png", width="100%", height="auto")
+                    .col-12.col-md-6.order-2.order-md-2
+                        .d-flex
+                            .mr-3
+                                img(src="./images/loan-icon-credit.png", width="auto", height="60")
+                            .flex-1
+                                .f-sm.f-green 副標題
+                                .f-lg.f-green.font-weight-bold 信用貸款
+                        .mt-3.f-xs.f-green
+                            | 汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字
+                    .col-12.col-md-1.hidden-sm-down.order-1.order-md-3
+                        .bg-green-gradient.p-2.h-100(style="width: 30px; float: left;")
+                            .rounded-circle.f-2xs.font-weight-bold.f-green.bg-white.text-center 2
+                .h-100px
+                //- 03 房屋貸款
+                .row
+                    .col-12.col-md-1.hidden-sm-down
+                        .bg-green-gradient.p-2.h-100(style="width: 30px; float: right;")
+                            .rounded-circle.f-2xs.font-weight-bold.f-green.bg-white.text-center 3
+                    .col-12.col-md-6
+                        .d-flex
+                            .mr-3
+                                img(src="./images/loan-icon-house.png", width="auto", height="60")
+                            .flex-1
+                                .f-sm.f-green 副標題
+                                .f-lg.f-green.font-weight-bold 房屋貸款
+                        .mt-3.f-xs.f-green
+                            | 汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字
+                    .col-12.col-md-5
+                        img(src="./images/loan-image-house.png", width="100%", height="auto")
+                .h-100px
+                //- 04 整合代償
+                .row
+                    .col-12.col-md-5.order-3.order-md-1
+                        img(src="./images/loan-image-combine.png", width="100%", height="auto")
+                    .col-12.col-md-6.order-2.order-md-2
+                        .d-flex
+                            .mr-3
+                                img(src="./images/loan-icon-combine.png", width="auto", height="60")
+                            .flex-1
+                                .f-sm.f-green 副標題
+                                .f-lg.f-green.font-weight-bold 整合代償
+                        .mt-3.f-xs.f-green
+                            | 汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字
+                    .col-12.col-md-1.hidden-sm-down.order-1.order-md-3
+                        .bg-green-gradient.p-2.h-100(style="width: 30px; float: left;")
+                            .rounded-circle.f-2xs.font-weight-bold.f-green.bg-white.text-center 4
+                .h-100px
+                //- 05 企業貸款
+                .row
+                    .col-12.col-md-1.hidden-sm-down
+                        .bg-green-gradient.p-2.h-100(style="width: 30px; float: right;")
+                            .rounded-circle.f-2xs.font-weight-bold.f-green.bg-white.text-center 5
+                    .col-12.col-md-6
+                        .d-flex
+                            .mr-3
+                                img(src="./images/loan-icon-business.png", width="auto", height="60")
+                            .flex-1
+                                .f-sm.f-green 副標題
+                                .f-lg.f-green.font-weight-bold 企業貸款
+                        .mt-3.f-xs.f-green
+                            | 汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字
+                    .col-12.col-md-5
+                        img(src="./images/loan-image-business.png", width="100%", height="auto")
+                .h-100px
+                //- 06 代書貸款
+                .row
+                    .col-12.col-md-5.order-3.order-md-1
+                        img(src="./images/loan-image-lawyer.png", width="100%", height="auto")
+                    .col-12.col-md-6.order-2.order-md-2
+                        .d-flex
+                            .mr-3
+                                img(src="./images/loan-icon-lawyer.png", width="auto", height="60")
+                            .flex-1
+                                .f-sm.f-green 副標題
+                                .f-lg.f-green.font-weight-bold 代書貸款
+                        .mt-3.f-xs.f-green
+                            | 汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字汽機車貸介紹文字
+                    .col-12.col-md-1.hidden-sm-down.order-1.order-md-3
+                        .bg-green-gradient.p-2.h-100(style="width: 30px; float: left;")
+                            .rounded-circle.f-2xs.font-weight-bold.f-green.bg-white.text-center 6
+            .h-50px
+            .parallax

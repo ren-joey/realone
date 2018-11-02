@@ -2,6 +2,9 @@ body {
   font-size: 16px;
   font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei"; }
 
+section {
+  position: relative; }
+
 img:not([width]) {
   width: 100%;
   height: auto; }
@@ -28,6 +31,12 @@ img:not([width]) {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .f-2xl {
   font-size: 3.6rem;
@@ -69,10 +78,16 @@ img:not([width]) {
   color: #999999; }
 
 .f-green {
-  color: #4bbbad; }
+  color: #10912f; }
 
 .f-blue {
   color: #6C8FEA; }
+
+.f-orange {
+  color: #fd9224; }
+
+.f-light-green {
+  color: #8fff71; }
 
 .bg-white {
   background-color: white; }
@@ -90,7 +105,19 @@ img:not([width]) {
   background-color: #6C8FEA; }
 
 .bg-green {
-  background-color: #4bbbad; }
+  background-color: #10912f; }
+
+.bg-blue-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0088e3), to(#00b9ef));
+  background: -webkit-linear-gradient(top, #0088e3 0%, #00b9ef 100%);
+  background: -o-linear-gradient(top, #0088e3 0%, #00b9ef 100%);
+  background: linear-gradient(to bottom, #0088e3 0%, #00b9ef 100%); }
+
+.bg-green-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#19a515), to(#83d623));
+  background: -webkit-linear-gradient(top, #19a515 0%, #83d623 100%);
+  background: -o-linear-gradient(top, #19a515 0%, #83d623 100%);
+  background: linear-gradient(to bottom, #19a515 0%, #83d623 100%); }
 
 .o-h {
   overflow: hidden; }
@@ -100,6 +127,9 @@ img:not([width]) {
 
 .w-50px {
   width: 50px; }
+
+.w-30px {
+  width: 30px; }
 
 .w-80 {
   width: 80%; }
@@ -124,6 +154,9 @@ img:not([width]) {
 
 .h-90vh {
   height: 90vh; }
+
+.h-80vh {
+  height: 80vh; }
 
 .h-100vh {
   height: 100vh; }

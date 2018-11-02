@@ -12,7 +12,7 @@ block head_end
 
 block body_content
     main.wrapper.mt-70px
-        section.o-h.d-relative
+        section.o-h
             .container
                 .h-100px
                 .row
@@ -20,9 +20,9 @@ block body_content
                         .d-flex.flex-column.justify-content-center.align-items-center
                             .f-sm.text-light.text-shadow
                                 | 家庭理財/週轉得好靠山
-                                - + companyTitle
-                            .f-xl.text-light.text-shadow
-                                | 華一財富有限公司
+                            .f-xl.text-light.text-shadow.font-weight-bold.text-nowrap
+                                //- img(src="./images/logo.png", width="140", height="auto")
+                                | #{companyTitle}有限公司
                             .mt-3.mb-3
                                 img(src="./images/index-text-bubble.png")
                 .h-100px
@@ -37,7 +37,7 @@ block body_content
                             img(src="./images/index-paint-phone.png")
                         div(style="position: absolute; right: -200px; bottom: -50px")
                             img(src="./images/index-paint-car.png")
-                    .f-xl.f-blue
+                    .f-xl.f-blue.font-weight-bold
                         | 量身定做的全方位保險
                     .f-sm.f-blue
                         | 保險特別方案，保險特別方案，保險特別方案，
@@ -49,27 +49,28 @@ block body_content
                         .col-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
                             img(src="./images/index-image-sky.png")
             .parallax
-        section.o-h.d-relative
+        section.o-h
             .container
                 .h-100px
                 .row
-                    .col-12.col-md-4.offset-md-4.col-lg-4.offset-lg-6
+                    .col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-6
                         .d-flex.flex-column.justify-content-center.align-items-center
                             .f-sm.text-light.text-shadow
-                                | 家庭理財/週轉得好靠山
-                                - + companyTitle
-                            .f-xl.text-light.text-shadow
-                                | 華一財富
-                                span.f-green
+                                | 家庭理財/週轉的好靠山
+                            .f-xl.text-light.text-shadow.text-nowrap.font-weight-bold
+                                | #{companyTitle}
+                                span.f-light-green
                                     | 信用借貸
-                            .mt-3.mb-3.rounded.bg-white.f-grey.px-3.py-2
-                                | 文字測試
+                            .mt-3.mb-3.rounded.bg-white.f-grey.px-4.py-4.d-flex.justify-content-center.align-items-center.flex-column
+                                .f-orange.f-md 優惠信用貸款專案
+                                img(src="./images/index-icon-pig.png" width="100" height="auto")
+                                .main-button.orange.mt-3 小額也能輕鬆借貸
                 .h-100px
-            .parallax(style="background-image: url(./images/index-bg-family.png)")
+            .parallax(style="background-image: url(./images/index-bg-loan.jpg)")
         section
+            .h-50px
             .container
                 .d-flex.flex-column.align-items-center.justify-content-center
-                    .h-50px
                     .mb-2.d-relative
                         div(style="position: absolute; left: -200px; bottom: -50px")
                             img(src="./images/index-paint-puzzle.png")
@@ -77,11 +78,108 @@ block body_content
                             img(src="./images/index-paint-family.png")
                     .f-xs.f-blue
                         | MAJOR SERVICE
-                    .f-xl.f-blue
+                    .f-xl.f-blue.font-weight-bold
                         | 主要服務項目
-                    .main-button.f-sm.mt-4
-                        | 專人免費諮詢
-                    .row.mt-4
-                        .col-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
-                            img(src="./images/index-image-sky.png")
+                .row
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            img(src="./images/index-icon-security.png" width="60%" height="auto")
+                            .mt-4.f-blue.f-lg 保險
+                            .my-1.f-grey.f-sm 壽險
+                            .my-1.f-grey.f-sm 意外險
+                            .my-1.f-grey.f-sm 醫療險
+                            .my-1.f-grey.f-sm 癌症與重大疾病險
+                            .my-1.f-grey.f-sm 長期照護險
+                            .my-1.f-grey.f-sm 車險
+                            .my-1.f-grey.f-sm 道路救援
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            img(src="./images/index-icon-loan.png" width="60%" height="auto")
+                            .mt-4.f-blue.f-lg 借貸
+                            .my-1.f-grey.f-sm 汽機車貸
+                            .my-1.f-grey.f-sm 信用貸款
+                            .my-1.f-grey.f-sm 房貸
+                            .my-1.f-grey.f-sm 整合代償
+                            .my-1.f-grey.f-sm 企業貸款
+                            .my-1.f-grey.f-sm 代書貸款
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            img(src="./images/index-icon-save.png" width="60%" height="auto")
+                            .mt-4.f-blue.f-lg 儲蓄理財
+                            .my-1.f-grey.f-sm 年年還本險
+                            .my-1.f-grey.f-sm 滿期養老險
+                            .my-1.f-grey.f-sm 增額型保險
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            img(src="./images/index-icon-credit.png" width="60%" height="auto")
+                            .mt-4.f-blue.f-lg 信用卡
+                            .my-1.f-grey.f-sm 紅利回饋
+                            .my-1.f-grey.f-sm 保費分期
+                            .my-1.f-grey.f-sm 里程累積
+            .h-50px
             .parallax
+        section
+            .h-50px
+            .container
+                .d-flex.flex-column.align-items-center.justify-content-center
+                    .f-xs.text-light
+                        | GUIDE
+                    .f-xl.text-light.font-weight-bold
+                        | 該如何開始？
+                .row
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            .mt-4.text-light.f-lg.font-.font-weight-bold
+                                span.badge.badge-pill.badge-danger.mr-1 推薦
+                                | 方法一
+                            .my-1.text-light.f-xs.text-center.text-nowrap
+                                | 留下您的聯絡資料，由專人主動聯繫您
+                                br
+                                br
+                            .h-50px.mt-3.bg-white(style="width: 1px;")
+                            img.mt-3(src="./images/index-icon-form.png" width="40%" height="auto")
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            .mt-4.text-light.f-lg.font-weight-bold
+                                //- span.badge.badge-pill.badge-danger.mr-1 推薦
+                                | 方法二
+                            .my-1.text-light.f-xs.text-center.text-nowrap
+                                | 進入我們的FB粉絲專頁
+                                br
+                                | 利用FACEBOK MESSAGER
+                                br
+                                | 立即與我們的專員線上溝通
+                            .h-50px.mt-3.bg-white(style="width: 1px;")
+                            img.mt-3(src="./images/index-icon-messager.png" width="40%" height="auto")
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            .mt-4.text-light.f-lg.font-weight-bold
+                                //- span.badge.badge-pill.badge-danger.mr-1 推薦
+                                | 方法三
+                            .my-1.text-light.f-xs.text-center.text-nowrap
+                                | 加入
+                                - + companyTitle
+                                | 官方LINE帳號
+                                br
+                                | @979770555
+                                br
+                                | 從LINE與我們的專員聯繫
+                            .h-50px.mt-3.bg-white(style="width: 1px;")
+                            img.mt-3(src="./images/index-icon-line.png" width="40%" height="auto")
+                    .col-12.col-md-6.col-lg-3.mt-4
+                        .d-flex.flex-column.align-items-center.justify-content-center
+                            .mt-4.text-light.f-lg.font-weight-bold
+                                span.badge.badge-pill.badge-danger.mr-1 推薦
+                                | 方法四
+                            .my-1.text-light.f-xs.text-center.text-nowrap
+                                | 直接撥打
+                                - + companyTitle
+                                | 服務專線
+                                br
+                                | 0979-770-555
+                                br
+                                | 由專員與您對談
+                            .h-50px.mt-3.bg-white(style="width: 1px;")
+                            img.mt-3(src="./images/index-icon-service.png" width="40%" height="auto")
+            .h-50px
+            .parallax(style="background-image: url(./images/index-bg-contact.jpg)")

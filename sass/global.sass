@@ -5,6 +5,9 @@ body
     font-size: 16px
     font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei"
 
+section
+    position: relative
+
 img:not([width])
     width: 100%
     height: auto
@@ -26,6 +29,9 @@ img:not([width])
         left: 0
         top: 50%
         transform: translateY(-50%)
+
+.flex-1
+    flex: 1
 
 .f-2xl
     font-size: 3.6rem
@@ -72,6 +78,12 @@ img:not([width])
 .f-blue
     color: $main-blue
 
+.f-orange
+    color: $orange
+
+.f-light-green
+    color: $light-green
+
 .bg-white
     background-color: white
 
@@ -90,6 +102,12 @@ img:not([width])
 .bg-green
     background-color: $main-green
 
+.bg-blue-gradient
+    background: linear-gradient(to bottom, #0088e3 0%,#00b9ef 100%)
+
+.bg-green-gradient
+    background: linear-gradient(to bottom, #19a515 0%,#83d623 100%)
+
 .o-h
     overflow: hidden
 
@@ -98,6 +116,9 @@ img:not([width])
 
 .w-50px
     width: 50px
+
+.w-30px
+    width: 30px
 
 .w-80
     width: 80%
@@ -122,6 +143,9 @@ img:not([width])
 
 .h-90vh
     height: 90vh
+
+.h-80vh
+    height: 80vh
 
 .h-100vh
     height: 100vh
