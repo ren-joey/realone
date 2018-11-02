@@ -12,78 +12,76 @@ block head_end
 
 block body_content
     main.wrapper.mt-70px
-        section.o-h
+        section.o-h.d-relative
+            .container
+                .h-100px
+                .row
+                    .col-12.col-md-5.offset-md-6.col-lg-4.offset-lg-7
+                        .d-flex.flex-column.justify-content-center.align-items-center
+                            .f-sm.text-light.text-shadow
+                                | 家庭理財/週轉得好靠山
+                                - + companyTitle
+                            .f-xl.text-light.text-shadow
+                                | 華一財富有限公司
+                            .mt-3.mb-3
+                                img(src="./images/index-text-bubble.png")
+                .h-100px
+            .parallax(style="background-image: url(./images/index-bg-family.png)")
+        section
+            .container
+                .d-flex.flex-column.align-items-center.justify-content-center
+                    .h-50px
+                    .mb-2.d-relative
+                        img(src="./images/index-text-subtitle.png", width="300px", height="auto")
+                        div(style="position: absolute; left: -200px; bottom: -50px")
+                            img(src="./images/index-paint-phone.png")
+                        div(style="position: absolute; right: -200px; bottom: -50px")
+                            img(src="./images/index-paint-car.png")
+                    .f-xl.f-blue
+                        | 量身定做的全方位保險
+                    .f-sm.f-blue
+                        | 保險特別方案，保險特別方案，保險特別方案，
+                        br
+                        | 保險特別方案，保險特別方案，保險特別方案。
+                    .main-button.f-sm.mt-4
+                        | 專人免費諮詢
+                    .row.mt-4
+                        .col-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
+                            img(src="./images/index-image-sky.png")
+            .parallax
+        section.o-h.d-relative
             .container
                 .h-100px
                 .row
                     .col-12.col-md-4.offset-md-4.col-lg-4.offset-lg-6
                         .d-flex.flex-column.justify-content-center.align-items-center
-                            .f-lg.text-light.text-shadow
-                                | test
-                            .f-md.text-light.text-shadow
-                                | subtitle
-                            .mt-3.mb-3.p-3.bg-white.f-blue.rounded.shadow
-                                | contents contents contents contents contents contents contents
+                            .f-sm.text-light.text-shadow
+                                | 家庭理財/週轉得好靠山
+                                - + companyTitle
+                            .f-xl.text-light.text-shadow
+                                | 華一財富
+                                span.f-green
+                                    | 信用借貸
+                            .mt-3.mb-3.rounded.bg-white.f-grey.px-3.py-2
+                                | 文字測試
                 .h-100px
-            #FSA.full_screen_ad
-        section.bg-white
-            .container.d-flex.flex-column.align-items-center.justify-content-center
-                .h-100px
-                .f-md.f-blue
-                    | subtitle
-                .f-lg.f-blue
-                    | test
-                .f-blue.rounded
-                    | contents contents contents contents contents contents contents
-                .row.pt-4
-                    .col-12.col-md-6
-                        .project-box.m-4.hover_style
-                            img(src="./images/iberry-screen.jpg", alt="", width="100%", height="auto")
-                    .col-12.col-md-6
-                        .project-box.m-4.hover_style
-                            img(src="./images/ennetech-hospital.jpg", alt="", width="100%", height="auto")
-                    .col-12.col-md-6
-                        .project-box.m-4.hover_style
-                            img(src="./images/iberry-model.jpg", alt="", width="100%", height="auto")
-                    .col-12.col-md-6
-                        .project-box.m-4.hover_style
-                            img(src="./images/ennetech-screen.jpg", alt="", width="100%", height="auto")
-                .h-100px
+            .parallax(style="background-image: url(./images/index-bg-family.png)")
+        section
+            .container
+                .d-flex.flex-column.align-items-center.justify-content-center
+                    .h-50px
+                    .mb-2.d-relative
+                        div(style="position: absolute; left: -200px; bottom: -50px")
+                            img(src="./images/index-paint-puzzle.png")
+                        div(style="position: absolute; right: -250px; bottom: -80px")
+                            img(src="./images/index-paint-family.png")
+                    .f-xs.f-blue
+                        | MAJOR SERVICE
+                    .f-xl.f-blue
+                        | 主要服務項目
+                    .main-button.f-sm.mt-4
+                        | 專人免費諮詢
+                    .row.mt-4
+                        .col-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
+                            img(src="./images/index-image-sky.png")
             .parallax
-        section.bg-blue
-            .container.d-flex.flex-column.align-items-center.justfy-content-center
-                .h-100px
-                .py-2.f-white.f-lg.font-weight-bold.border_bottom_white
-                    | 您專屬的系統開發團隊！
-                .row.pt-4.w-100
-                    .col-12.col-md-6
-                        img(src="./images/system.svg", alt="", width="100%", height="auto")
-                    .col-12.col-md-6.d-flex.flex-column.align-items-center.justfy-content-center
-                        .pt-4.pb-2.f-white.f-xl
-                            | 強大的電子平台
-                            br
-                            | 倍增營收利潤！
-                        .py-2.f-white.f-md
-                            | &#x2713;優美的客制設計
-                            br
-                            | 自訂您的網店和展示產品版面
-                        .py-2.f-white.f-md
-                            | &#x2713;完整的解決方案
-                            br
-                            | 管理訂單與整合企業內部流程
-                        .py-2.f-white.f-md
-                            | &#x2713;豐富產業輔導經驗
-                            br
-                            | 解決企業痛點與打通關鍵環節
-
-                .h-100px
-            .parallax
-        section.bg-white
-            .container.d-flex.flex-column.align-items-center.justfy-content-center
-                .h-100px
-                .py-2.f-green.f-2xl
-                    | 馬上開始屬於你的專案
-                .py-2.f-green.f-md
-                    a.hover_style_bigger.hover_style_border(href="mailto:cs@solutionmappings.com")
-                        | 與我們聯繫
-                .h-100px

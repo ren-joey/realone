@@ -1,5 +1,8 @@
 @import variables
 
+body
+    background-color: #FAFAFA
+
 .header_bar
     position: fixed
     height: 70px
@@ -86,5 +89,27 @@
         box-shadow: 0 0 30px rgba(0, 0, 0, .5)
         transform: scale(.95)
 
-.main-buttom
+.main-button
     border-radius: 50px
+    background: linear-gradient(to bottom, #00b9ef 0%,#0088e3 100%);
+    color: white
+    padding: 5px 20px
+    border: 1px solid white
+    transition: .5s all
+    cursor: pointer
+    &:hover
+        background: white;
+        color: $main-blue
+        border: 1px solid $main-blue
+
+
+.parallax
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
